@@ -336,7 +336,8 @@ public class AnalyticAnalyzer {
             return false;
         }
 
-        return fn.functionName().equalsIgnoreCase(AnalyticExpr.CUMEDIST);
+        return fn.functionName().equalsIgnoreCase(AnalyticExpr.CUMEDIST)
+                || fn.functionName().equalsIgnoreCase(AnalyticExpr.PERCENTRANK);
     }
 
     private static boolean isNtileFn(Function fn) {

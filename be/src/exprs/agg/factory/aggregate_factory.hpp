@@ -183,6 +183,8 @@ public:
 
     static AggregateFunctionPtr MakeCumeDistWindowFunction();
 
+    static AggregateFunctionPtr MakePercentRankWindowFunction();
+
     static AggregateFunctionPtr MakeNtileWindowFunction();
 
     template <LogicalType LT, bool ignoreNulls>
